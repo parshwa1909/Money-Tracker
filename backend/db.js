@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectToMongo = () => {
     const mongoURL =
-        "mongodb://localhost:27017/moneytracker?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false";
+        "mongodb+srv://parshwa2001:Psg8460887627@parshwa19.jqxc2ra.mongodb.net/?retryWrites=true&w=majority";
     mongoose.connect(mongoURL, () => {
         console.log("connected to mongo");
     });
